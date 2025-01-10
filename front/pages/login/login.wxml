@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="login-box">
+    <view class="logo">
+      <image src="/assets/logo.png" mode="aspectFit"></image>
+    </view>
+    <view class="title">欢迎使用</view>
+    <view class="subtitle">登录体验更多功能</view>
+    <button 
+      type="primary" 
+      bindtap="handleLogin" 
+      loading="{{loading}}"
+      hover-class="button-hover">
+      微信一键登录
+    </button>
+  </view>
+</view> 

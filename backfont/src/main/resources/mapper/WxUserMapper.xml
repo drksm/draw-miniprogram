@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.draw.mapper.WxUserMapper">
+    <select id="findByOpenId" resultType="com.draw.entity.WxUser">
+        SELECT * FROM wx_user WHERE open_id = #{openId}
+    </select>
+    
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO wx_user (open_id, nick_name, avatar_url)
+        VALUES (#{openId}, #{nickName}, #{avatarUrl})
+    </insert>
+    
+    <update id="update">
+        UPDATE wx_user
+        SET nick_name = #{nickName},
+            avatar_url = #{avatarUrl},
+            updated_at = CURRENT_TIMESTAMP
+        WHERE id = #{id}
+    </update>
+</mapper> 

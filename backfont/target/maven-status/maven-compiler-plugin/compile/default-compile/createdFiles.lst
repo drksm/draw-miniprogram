@@ -1,0 +1,11 @@
+com\draw\service\impl\WxUserServiceImpl.class
+com\draw\service\WxUserService.class
+com\draw\model\request\LoginRequest.class
+com\draw\common\R.class
+com\draw\entity\LoginLog.class
+com\draw\entity\WxUser.class
+com\draw\mapper\LoginLogMapper.class
+com\draw\mapper\WxUserMapper.class
+com\draw\DrawApplication.class
+com\draw\config\WebConfig.class
+com\draw\controller\WxAuthController.class

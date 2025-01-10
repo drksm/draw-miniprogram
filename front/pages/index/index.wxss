@@ -1,0 +1,38 @@
+/**index.wxss**/
+page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.scrollarea {
+  flex: 1;
+  overflow-y: hidden;
+}
+
+.container {
+  padding: 20px;
+}
+
+.user-info {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.welcome {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.user-name {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.login-time {
+  font-size: 14px;
+  color: #999;
+}

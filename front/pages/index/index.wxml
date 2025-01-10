@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<navigation-bar title="Weixin" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="container">
+    <view class="user-info">
+      <view class="welcome">
+        欢迎回来
+      </view>
+      <view class="user-name">
+        {{userInfo.nickName || '用户'}}
+      </view>
+      <view class="login-time">
+        登录时间：{{loginTime}}
+      </view>
+    </view>
+  </view>
+</scroll-view>
